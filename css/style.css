@@ -523,6 +523,44 @@ img {
   color: var(--accent-hover);
 }
 
+/* --- Education --- */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.education-card {
+  padding: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.education-card:hover {
+  border-color: var(--border-hover);
+}
+
+.education-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.education-degree {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.education-details {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 /* --- Contact --- */
 .contact {
   text-align: center;
@@ -623,6 +661,10 @@ img {
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-grid {
     grid-template-columns: 1fr;
   }
 
