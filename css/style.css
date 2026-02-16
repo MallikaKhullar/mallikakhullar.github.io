@@ -280,9 +280,9 @@ img {
 /* --- About --- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
 }
 
 .about-content p {
@@ -291,33 +291,18 @@ img {
   font-size: 1.05rem;
 }
 
-.about-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.about-photo {
+  display: flex;
+  justify-content: center;
 }
 
-.stat {
-  text-align: center;
-  padding: 24px 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.about-photo img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  border: 2px solid var(--border);
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
 }
 
 /* --- Skills --- */
@@ -698,8 +683,12 @@ img {
     gap: 40px;
   }
 
-  .about-stats {
-    grid-template-columns: repeat(3, 1fr);
+  .about-photo {
+    order: -1;
+  }
+
+  .about-photo img {
+    max-width: 240px;
   }
 
   .skills-grid {
@@ -732,9 +721,6 @@ img {
 }
 
 @media (max-width: 480px) {
-  .about-stats {
-    grid-template-columns: 1fr;
-  }
 
   .hero-cta {
     flex-direction: column;
