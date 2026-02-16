@@ -597,6 +597,46 @@ img {
   transform: translateY(-2px);
 }
 
+/* --- Beyond Work / Personal --- */
+.personal {
+  background: var(--bg-secondary);
+}
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.personal-card {
+  padding: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition);
+}
+
+.personal-card:hover {
+  border-color: var(--border-hover);
+}
+
+.personal-icon {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.personal-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.personal-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* --- Footer --- */
 .footer {
   padding: 24px 0;
@@ -671,6 +711,10 @@ img {
   }
 
   .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-grid {
     grid-template-columns: 1fr;
   }
 
