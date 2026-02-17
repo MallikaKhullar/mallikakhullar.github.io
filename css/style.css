@@ -279,9 +279,7 @@ img {
 
 /* --- Logo Bar --- */
 .logo-bar {
-  padding: 40px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
   background: var(--bg-primary);
 }
 
@@ -297,8 +295,6 @@ img {
   height: 100px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1) brightness(0) invert(1);
-  opacity: 0.5;
 }
 
 /* --- About --- */
