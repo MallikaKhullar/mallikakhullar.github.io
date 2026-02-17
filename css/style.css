@@ -277,6 +277,37 @@ img {
   transform: translateY(-2px);
 }
 
+/* --- Logo Bar --- */
+.logo-bar {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-primary);
+}
+
+.logo-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.logo-item svg {
+  color: var(--text-muted);
+}
+
 /* --- About --- */
 .about-grid {
   display: grid;
