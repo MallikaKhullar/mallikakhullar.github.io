@@ -277,26 +277,6 @@ img {
   transform: translateY(-2px);
 }
 
-/* --- Logo Bar --- */
-.logo-bar {
-  padding: 24px 0;
-  background: var(--bg-primary);
-}
-
-.logo-bar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: nowrap;
-}
-
-.logo-img {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
-}
-
 /* --- About --- */
 .about-grid {
   display: grid;
